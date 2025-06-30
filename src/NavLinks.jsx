@@ -6,7 +6,7 @@ const NavLinks = () => {
     <div className='nav-links'>
       {sublinks.map((item) => {
         const { pageId, page } = item
-        console.log(item)
+        // console.log(item)
 
         return (
           <button
