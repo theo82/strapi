@@ -1,0 +1,21 @@
+import sublinks from "./data"
+const NavLinks = () => {
+  return (
+    <div className="nav-links">{
+     sublinks.map((item) => {
+      const {pageId, page} = item
+      console.log(item);
+      
+      return (
+        <button key={pageId} 
+         className="nav-link"
+        >
+         {page}
+        </button>
+      )
+     })
+    }</div>
+  )
+}
+
+export default NavLinks
